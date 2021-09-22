@@ -8,31 +8,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <script src="p5.play.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
 
-
-    <script>
-      //Your web app's Firebase configuration
-      var firebaseConfig = {
-    apiKey: "AIzaSyAlYTDtmHd5ebKMonZUo7lnweOzDdBo40E",
-    authDomain: "myquiz-game.firebaseapp.com",
-    databaseURL: "https://myquiz-game-default-rtdb.firebaseio.com",
-    projectId: "myquiz-game",
-    storageBucket: "myquiz-game.appspot.com",
-    messagingSenderId: "135491178213",
-    appId: "1:135491178213:web:7fd97cb4bc6b0b0b4c0e0c"
-  };
-
-
-      // // Initialize Firebase
-      // firebase.initializeApp(firebaseConfig);
-
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCBn1A9-Rl5WbaVzuHhuDvEjy0yWLw3Ujo",
+        authDomain: "myquiz-ff3af.firebaseapp.com",
+        databaseURL: "https://myquiz-ff3af-default-rtdb.firebaseio.com",
+        projectId: "myquiz-ff3af",
+        storageBucket: "myquiz-ff3af.appspot.com",
+        messagingSenderId: "592168351053",
+        appId: "1:592168351053:web:10ec75788f750b11677304"
+      };
+    
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
     </script>
 
-    <script src="js/Contestant.js"></script>
+     <script src="js/Contestant.js"></script>
     <script src="js/Question.js"></script>
     <script src="js/Quiz.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css"/>
